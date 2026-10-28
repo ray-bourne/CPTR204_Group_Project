@@ -1,0 +1,1 @@
+Put the department video here as an .mp4 (lowercase name, under 25 MB), e.g. department-video.mp4

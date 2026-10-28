@@ -1,0 +1,41 @@
+/* =========================================================
+   style.css - our ONLY custom CSS (Ray edits this file)
+   It adds the NCU navy colour and our fonts.
+   Everything else on the site uses Bootstrap 5.3 classes.
+   Gold = Bootstrap's own "warning" colour (text-warning, btn-warning).
+   ========================================================= */
+
+/* ---------- BRAND COLOUR: NCU navy ---------- */
+:root {
+  --navy: #0b2e59;
+}
+
+.bg-navy   { background-color: var(--navy) !important; }
+.text-navy { color: var(--navy) !important; }
+
+/* NAVY BUTTON + HOVER */
+.btn-navy {
+  background-color: var(--navy);
+  color: #ffffff;
+}
+.btn-navy:hover {
+  background-color: #071f3d;
+  color: #ffffff;
+}
+
+/* ---------- FONTS ---------- */
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+}
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+/* ---------- NAVBAR LINKS: brighter white, gold on hover and on the current page ---------- */
+.navbar-dark .nav-link {
+  color: rgba(255, 255, 255, 0.85);
+}
+.navbar-dark .nav-link:hover,
+.navbar-dark .nav-link.active {
+  color: #ffc107;
+}
