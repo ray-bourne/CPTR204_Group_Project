@@ -2,7 +2,7 @@
 
 Our group website for the Department of Mathematics & Engineering at NCU. 4 pages, built with Bootstrap 5.
 
-Due on Moodle Nov 9 by 11:59pm, so let's not leave it for the last minute.
+Due on Moodle Nov 9 by 11:59pm.
 
 ## Guides
 
