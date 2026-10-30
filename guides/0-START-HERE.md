@@ -34,6 +34,28 @@ We're building a 4-page Bootstrap 5 website for NCU's **Department of Mathematic
 5. To see your page, open the GitHub Pages link Ray posts, about a minute after you commit. github.dev can't preview the page itself.
 6. Close the tab when done. Next time open github.dev fresh so you get everyone's latest work.
 
+## Saving vs committing (how changes reach the live site)
+
+- **Saving (Ctrl+S)** only saves inside github.dev. Nothing changes on the live site yet.
+- **Committing** sends your work to GitHub: **Source Control** (third icon on the left) → type a message → **Commit & Push**.
+- About **1 minute** after committing, refresh the live site: https://ray-bourne.github.io/CPTR204_Group_Project/
+- Not showing? Press **Ctrl + Shift + R** (hard refresh); the browser may be showing an old copy.
+
+## What to type as the commit message
+
+A few words saying what you just did, starting with an action word:
+
+| After you… | Commit message |
+| --- | --- |
+| Add the carousel | `Added carousel to Home page` |
+| Add the welcome row | `Added welcome row with grid` |
+| Add the programme cards | `Added programme cards` |
+| Change text | `Updated programme card text` |
+| Fix something | `Fixed carousel caption position` |
+| Add pictures | `Added carousel and programme photos` |
+
+Commit after **each block**, not once at the end: if something breaks, you can see which change caused it. The commit history also shows the lecturer who did what.
+
 ## Rules
 
 - Only touch your own page. The header, navbar and footer are already done and must stay the same on every page; ask Ray for any change there.
