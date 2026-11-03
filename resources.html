@@ -1,132 +1,543 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Department of Mathematics & Engineering, Northern Caribbean University">
+
   <title>Resources | Mathematics &amp; Engineering - NCU</title>
 
-
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet">
 
+  <!-- Custom CSS -->
   <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body class="d-flex flex-column min-vh-100">
 
+  <!-- ================= HEADER / NAVIGATION ================= -->
 
   <header>
-   
     <nav class="navbar navbar-expand-lg navbar-dark bg-navy shadow-sm">
       <div class="container">
 
         <a class="navbar-brand d-flex align-items-center" href="index.html">
-          <img src="images/logo.svg" alt="Department of Mathematics and Engineering logo" width="50" height="50" class="me-2">
-          <span class="lh-sm">Mathematics &amp; Engineering<small class="d-block text-warning fw-normal small">Northern Caribbean University</small></span>
+          <img src="images/logo.svg" alt="Department of Mathematics and Engineering logo" width="50" height="50"
+            class="me-2">
+
+          <span class="lh-sm">
+            Mathematics &amp; Engineering
+            <small class="d-block text-warning fw-normal small">
+              Northern Caribbean University
+            </small>
+          </span>
         </a>
 
-        
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
-                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="mainNav">
-          <!-- NAV LINKS (active = the page you are on) -->
+
+          <!-- Navigation Links -->
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link fw-semibold text-uppercase small" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link fw-semibold text-uppercase small" href="about.html">About Us</a></li>
-            <li class="nav-item"><a class="nav-link fw-semibold text-uppercase small active" aria-current="page" href="resources.html">Resources</a></li>
-            <li class="nav-item"><a class="nav-link fw-semibold text-uppercase small" href="contact.html">Contact Us</a></li>
+
+            <li class="nav-item">
+              <a class="nav-link fw-semibold text-uppercase small" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link fw-semibold text-uppercase small" href="about.html">About Us</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link fw-semibold text-uppercase small active" aria-current="page"
+                href="resources.html">Resources</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link fw-semibold text-uppercase small" href="contact.html">Contact Us</a>
+            </li>
+
           </ul>
 
-        
+          <!-- Search Bar -->
           <form class="d-flex ms-lg-3" role="search">
             <input class="form-control me-2" type="search" name="q" placeholder="Search" aria-label="Search">
-            <button class="btn btn-warning" type="submit">Search</button>
-          </form>
-        </div>
 
+            <button class="btn btn-warning" type="submit">
+              Search
+            </button>
+          </form>
+
+        </div>
       </div>
     </nav>
   </header>
 
-  <!-- ===================== MAIN CONTENT (Migel builds the Resources page here) ===================== -->
+
+  <!-- ================= MAIN CONTENT ================= -->
 
   <main class="container py-5 flex-grow-1">
 
-    <!--Page Banner-->
+    <!-- PAGE BANNER -->
     <section class="bg-light border-start border-warning border-5 p-4 mb-5 rounded">
+
       <h1 class="text-navy mb-1">Resources</h1>
-      <p class="lead mb-0">Guides, tools and support for your studies.</p>
+
+      <p class="lead mb-0">
+        Guides, tools and support for your studies.
+      </p>
+
     </section>
 
-    <!--Grid: accordion-->
+
+    <!-- ================= STUDENT RESOURCES ================= -->
+
     <section class="row g-4 mb-5">
+
+      <!-- LEFT COLUMN: ACCORDION (8 COLUMNS) -->
       <div class="col-lg-8">
-        <h2 class="text-navy mb-3">Student Resources</h2>
-      </div>
 
-      <!--Accordion: 4 items, first one open-->
-      <div class="accordion" id="resourceAccordion">
-        <h3 class="accordion-header">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" 
-          data-bs-target="#res1" aria-expanded="true" aria-controls="res1">
+        <h2 class="text-navy mb-3">
+          Student Resources
+        </h2>
 
-          Study Guides &amp; Past Papers
-          </button>
-        </h3>
-        <div id="res1" class="accordion-collapse collapse show" data-bs-parent="#resourceAccordion">
-          <div class="accordion-body">
-            <p>Here are some useful study guides and past papers for your reference.</p>
+        <!-- Accordion -->
+        <div class="accordion" id="resourceAccordion">
+
+
+          <!-- ACCORDION ITEM 1: STUDY GUIDES -->
+          <div class="accordion-item">
+
+            <h3 class="accordion-header">
+
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#res1"
+                aria-expanded="true" aria-controls="res1">
+
+                Study Guides &amp; Past Papers
+
+              </button>
+
+            </h3>
+
+            <div id="res1" class="accordion-collapse collapse show" data-bs-parent="#resourceAccordion">
+
+              <div class="accordion-body">
+
+                <p>
+                  Here are some useful study guides and past papers
+                  for your reference.
+                </p>
+
+              </div>
+
+            </div>
           </div>
-        </div>
-        
-      </div>
-    </section>
 
-    
+
+          <!-- ACCORDION ITEM 2: LABS -->
+          <div class="accordion-item">
+
+            <h3 class="accordion-header">
+
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#res2"
+                aria-expanded="false" aria-controls="res2">
+
+                Labs &amp; Equipment
+
+              </button>
+
+            </h3>
+
+            <div id="res2" class="accordion-collapse collapse" data-bs-parent="#resourceAccordion">
+
+              <div class="accordion-body">
+
+                <p>
+                  Students can access departmental laboratories
+                  and equipment for practical learning and
+                  hands-on experience. Contact the department
+                  office for information about availability
+                  and scheduling.
+                </p>
+
+              </div>
+
+            </div>
+          </div>
+
+
+          <!-- ACCORDION ITEM 3: SOFTWARE -->
+          <div class="accordion-item">
+
+            <h3 class="accordion-header">
+
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#res3"
+                aria-expanded="false" aria-controls="res3">
+
+                Software &amp; Tools
+
+              </button>
+
+            </h3>
+
+            <div id="res3" class="accordion-collapse collapse" data-bs-parent="#resourceAccordion">
+
+              <div class="accordion-body">
+
+                <p>
+                  Students may have access to software and
+                  digital tools used in mathematics,
+                  engineering and computer-related courses.
+                  Contact the department for further details.
+                </p>
+
+              </div>
+
+            </div>
+          </div>
+
+
+          <!-- ACCORDION ITEM 4: FAQs -->
+          <div class="accordion-item">
+
+            <h3 class="accordion-header">
+
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#res4"
+                aria-expanded="false" aria-controls="res4">
+
+                Frequently Asked Questions (FAQs)
+
+              </button>
+
+            </h3>
+
+            <div id="res4" class="accordion-collapse collapse" data-bs-parent="#resourceAccordion">
+
+              <div class="accordion-body">
+
+                <p>
+                  Here are some frequently asked questions
+                  and their answers.
+                </p>
+
+                <ul>
+
+                  <li>
+                    <strong>How do I access the labs?</strong>
+
+                    <p>
+                      You can access the labs by contacting
+                      the department office to schedule
+                      a time. Make sure to bring your
+                      student ID and any required materials.
+                    </p>
+                  </li>
+
+                  <li>
+                    <strong>What software is available for students?</strong>
+
+                    <p>
+                      Students may have access to software
+                      such as MATLAB, AutoCAD and Microsoft
+                      Office Suite. Contact the department
+                      for information about available tools.
+                    </p>
+                  </li>
+
+                  <li>
+                    <strong>Where can I find past papers?</strong>
+
+                    <p>
+                      You can find past papers through
+                      available departmental resources
+                      or by contacting the academic
+                      affairs office.
+                    </p>
+                  </li>
+
+                </ul>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+        <!-- End Accordion -->
+
+      </div>
+
+
+      <!-- RIGHT COLUMN: NEED HELP CARD (4 COLUMNS) -->
+      <div class="col-lg-4">
+
+        <div class="card bg-navy text-white h-100 shadow-sm">
+
+          <div class="card-body d-flex flex-column">
+
+            <h5 class="card-title text-warning">
+              Need Help?
+            </h5>
+
+            <p class="card-text">
+              If you have any questions or need assistance,
+              please contact the department office.
+            </p>
+
+            <a href="contact.html" class="btn btn-warning mt-3">
+
+              Contact Us
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+    <!-- End Student Resources Section -->
+
+
+    <!-- ================= RESOURCE CARDS ================= -->
+
+    <section class="mt-5 pt-4 mb-5">
+
+      <h2 class="text-navy mb-4">
+        Additional Resources
+      </h2>
+
+      <div class="row g-4">
+
+
+        <!-- RESOURCE CARD 1: LIBRARY -->
+        <div class="col-md-4">
+
+          <div class="card h-100 shadow-sm">
+
+            <img src="images/library.jpg" class="card-img-top" alt="University Library">
+
+            <div class="card-body d-flex flex-column">
+
+              <h5 class="card-title text-navy">
+                Library
+              </h5>
+
+              <p class="card-text">
+                Access academic books, research materials
+                and other learning resources to support
+                your studies.
+              </p>
+
+              <a href="https://www.ncu.edu.jm" target="_blank" rel="noopener" class="btn btn-warning mt-auto">
+
+                Visit
+
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- RESOURCE CARD 2: ENGINEERING LABS -->
+        <div class="col-md-4">
+
+          <div class="card h-100 shadow-sm">
+
+            <img src="images/engineering-lab.jpg" class="card-img-top" alt="Engineering Laboratory">
+
+            <div class="card-body d-flex flex-column">
+
+              <h5 class="card-title text-navy">
+                Engineering Labs
+              </h5>
+
+              <p class="card-text">
+                Explore practical learning facilities
+                and equipment available to engineering
+                students.
+              </p>
+
+              <a href="contact.html" class="btn btn-warning mt-auto">
+
+                Visit
+
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- RESOURCE CARD 3: COMPUTER LAB -->
+        <div class="col-md-4">
+
+          <div class="card h-100 shadow-sm">
+
+            <img src="images/computer-lab.jpg" class="card-img-top" alt="Computer Laboratory">
+
+            <div class="card-body d-flex flex-column">
+
+              <h5 class="card-title text-navy">
+                Computer Lab
+              </h5>
+
+              <p class="card-text">
+                Find information about computer facilities
+                and technology resources available
+                for student use.
+              </p>
+
+              <a href="contact.html" class="btn btn-warning mt-auto">
+
+                Visit
+
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </section>
+    <!-- End Resource Cards Section -->
+
 
   </main>
 
 
+  <!-- ================= FOOTER ================= -->
 
-
-
-  
   <footer class="bg-navy text-white pt-5 pb-3">
+
     <div class="container">
-      <!-- FOOTER GRID: 3 columns on medium screens and up, stacked on phones (BREAKPOINT md) -->
+
       <div class="row g-4">
+
+
+        <!-- DEPARTMENT INFORMATION -->
         <div class="col-md-5">
-          <h5 class="text-warning">Department of Mathematics &amp; Engineering</h5>
-          <p class="small mb-0">College of Natural &amp; Applied Sciences, Allied Health &amp; Nursing<br>
-            Northern Caribbean University, Manchester Road, Mandeville, Jamaica</p>
+
+          <h5 class="text-warning">
+            Department of Mathematics &amp; Engineering
+          </h5>
+
+          <p class="small mb-0">
+
+            College of Natural &amp; Applied Sciences,
+            Allied Health &amp; Nursing
+
+            <br>
+
+            Northern Caribbean University,
+            Manchester Road, Mandeville, Jamaica
+
+          </p>
+
         </div>
+
+
+        <!-- QUICK LINKS -->
         <div class="col-6 col-md-3">
-          <h6 class="text-warning">Quick Links</h6>
+
+          <h6 class="text-warning">
+            Quick Links
+          </h6>
+
           <ul class="list-unstyled small">
-            <li><a class="link-light text-decoration-none" href="index.html">Home</a></li>
-            <li><a class="link-light text-decoration-none" href="about.html">About Us</a></li>
-            <li><a class="link-light text-decoration-none" href="resources.html">Resources</a></li>
-            <li><a class="link-light text-decoration-none" href="contact.html">Contact Us</a></li>
+
+            <li>
+              <a class="link-light text-decoration-none" href="index.html">Home</a>
+            </li>
+
+            <li>
+              <a class="link-light text-decoration-none" href="about.html">About Us</a>
+            </li>
+
+            <li>
+              <a class="link-light text-decoration-none" href="resources.html">Resources</a>
+            </li>
+
+            <li>
+              <a class="link-light text-decoration-none" href="contact.html">Contact Us</a>
+            </li>
+
           </ul>
+
         </div>
+
+
+        <!-- UNIVERSITY LINKS -->
         <div class="col-6 col-md-4">
-          <h6 class="text-warning">University</h6>
+
+          <h6 class="text-warning">
+            University
+          </h6>
+
           <ul class="list-unstyled small">
-            <li><a class="link-light text-decoration-none" href="https://www.ncu.edu.jm" target="_blank" rel="noopener">NCU Website</a></li>
-            <li><a class="link-light text-decoration-none" href="https://www.ncu.edu.jm/alldepartments" target="_blank" rel="noopener">All Departments</a></li>
+
+            <li>
+              <a class="link-light text-decoration-none" href="https://www.ncu.edu.jm" target="_blank" rel="noopener">
+
+                NCU Website
+
+              </a>
+            </li>
+
+            <li>
+              <a class="link-light text-decoration-none" href="https://www.ncu.edu.jm/alldepartments" target="_blank"
+                rel="noopener">
+
+                All Departments
+
+              </a>
+            </li>
+
           </ul>
+
         </div>
+
+
       </div>
+
       <hr class="border-secondary">
-      <p class="text-center small mb-0 opacity-75">&copy; 2026 Department of Mathematics &amp; Engineering, NCU. CPTR204 student project.</p>
+
+      <p class="text-center small mb-0 opacity-75">
+
+        &copy; 2026 Department of Mathematics &amp; Engineering, NCU.
+        CPTR204 student project.
+
+      </p>
+
     </div>
+
   </footer>
 
 
+  <!-- Bootstrap JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
+
 </html>
