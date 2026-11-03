@@ -56,8 +56,37 @@
 
   <main class="container py-5 flex-grow-1">
 
-    <!-- TODO (Migel): PAGE BANNER, ACCORDION, HELP CARD and RESOURCE CARDS go here. See your guide. -->
-    <h1 class="text-navy">Resources</h1>
+    <!--Page Banner-->
+    <section class="bg-light border-start border-warning border-5 p-4 mb-5 rounded">
+      <h1 class="text-navy mb-1">Resources</h1>
+      <p class="lead mb-0">Guides, tools and support for your studies.</p>
+    </section>
+
+    <!--Grid: accordion-->
+    <section class="row g-4 mb-5">
+      <div class="col-lg-8">
+        <h2 class="text-navy mb-3">Student Resources</h2>
+      </div>
+
+      <!--Accordion: 4 items, first one open-->
+      <div class="accordion" id="resourceAccordion">
+        <h3 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" 
+          data-bs-target="#res1" aria-expanded="true" aria-controls="res1">
+
+          Study Guides &amp; Past Papers
+          </button>
+        </h3>
+        <div id="res1" class="accordion-collapse collapse show" data-bs-parent="#resourceAccordion">
+          <div class="accordion-body">
+            <p>Here are some useful study guides and past papers for your reference.</p>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    
 
   </main>
 
