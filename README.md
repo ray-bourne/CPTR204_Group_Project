@@ -1,38 +1,52 @@
-# CPTR204 Group Project - Math & Engineering Dept Website
+# Department of Mathematics & Engineering – NCU Website
 
-Our group website for the Department of Mathematics & Engineering at NCU. 4 pages, built with Bootstrap 5.
+A 4-page website for the Department of Mathematics & Engineering at Northern Caribbean University, built for CPTR204 (Website Design & Implementation), Group Assignment 2.
 
-Due on Moodle Nov 9 by 11:59pm.
+**Live site:** https://ray-bourne.github.io/CPTR204_Group_Project/
 
-## Guides
+## Pages
 
-Everybody's steps are in the `guides` folder. Read `0-START-HERE` first, then go to yours.
+| Page | File | Main Bootstrap parts |
+|---|---|---|
+| Home | `index.html` | Carousel, grid, cards |
+| About Us | `about.html` | Video, faculty cards |
+| Resources | `resources.html` | Accordion, grid, cards |
+| Contact Us | `contact.html` | Form, Google Map |
 
-## Who's doing what
+Every page shares the same navbar (with search) and footer, and is responsive for phones, tablets and laptops.
 
-- Ray - Home page (`index.html`), header/navbar/footer and the wireframe
-- Adrian Hamilton - About Us (`about.html`)
-- Migel - Resources (`resources.html`)
-- Adrian Hinds - Contact Us (`contact.html`)
-- Michiel - pictures, video and dept info (`images` and `video` folders)
+## Built with
 
-## How we're working
+- HTML5
+- [Bootstrap 5.3.8](https://getbootstrap.com/docs/5.3/getting-started/introduction/) (CSS and JavaScript from the jsDelivr CDN)
+- Google Fonts (Montserrat and Open Sans)
+- `css/style.css` – our only custom CSS: the NCU navy colour and the fonts
+- Hosted on GitHub Pages
 
-- Press `.` on the repo page to open it in github.dev (VS Code in the browser, nothing to install)
-- When you're done, go to Source Control, type what you did and hit Commit & Push
-- Check the live site a minute after to see your changes: https://ray-bourne.github.io/CPTR204_Group_Project/
+## Folder structure
 
-## Rules
+```
+index.html
+about.html
+resources.html
+contact.html
+css/style.css
+images/
+video/
+```
 
-- Only touch your own page. If something in the header, navbar, footer or style.css needs changing, tell me
-- Build inside the `<main>` part of your page only
-- Image and video names all lowercase with no spaces (like `lab-1.jpg`)
-- Keep the video under 25MB
-- Put a comment above each Bootstrap part (like `<!-- CAROUSEL -->`) so we can find it fast when presenting
+## Viewing the site
 
-## Styling
+Open the live site link above, or download the repo and open `index.html` in a browser (an internet connection is needed for Bootstrap and the fonts to load).
 
-Sir said we don't really need our own CSS since we're using Bootstrap, so stick to Bootstrap classes. The only custom CSS is in `style.css` for the NCU navy colour and the fonts.
+## Group 9
 
-- Navy: `bg-navy`, `text-navy`, `btn-navy`
-- Gold: `text-warning`, `btn-warning`
+- Ray-Shaun Bourne
+- Adrian Hamilton
+- Migel Daley
+- Adrian Hinds
+- Michiel Williams
+
+## Image credits
+
+Some photos are from [Pexels](https://www.pexels.com) (free to use).
