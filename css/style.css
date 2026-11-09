@@ -36,6 +36,13 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 .about-title-banner {
   background: #f4f7fb;
   border-left: 7px solid #0b2e59;
+}
+
+
+
+.about-title-banner {
+  background: #f4f7fb;
+  border-left: 7px solid #0b2e59;
   border-radius: 8px;
   padding: 35px 40px;
   margin-bottom: 35px;
