@@ -29,3 +29,532 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 .navbar-dark .nav-link.active {
   color: #ffc107;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* General page styling */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #343a40;
+    line-height: 1.7;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --ncu-blue: #102d50;
+    --ncu-gold: #e5b83f;
+    --light-grey: #f5f6f8;
+}
+
+
+/* Navigation */
+
+.department-nav {
+    background-color: var(--ncu-blue);
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand-mark {
+    background-color: var(--ncu-gold);
+    color: var(--ncu-blue);
+    padding: 6px 10px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.brand-name {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+    margin-left: 12px;
+    font-size: 14px;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--ncu-gold);
+}
+
+.search-box {
+    border-radius: 4px 0 0 4px;
+    border: none;
+}
+
+.search-button {
+    background-color: var(--ncu-gold);
+    color: var(--ncu-blue);
+    border-radius: 0 4px 4px 0;
+}
+
+.search-button:hover {
+    background-color: #d3a52f;
+}
+
+
+/* Hero banner */
+
+.about-banner {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(9, 29, 53, 0.94),
+            rgba(9, 29, 53, 0.45)
+        ),
+        url("../images/engineering.jpg");
+
+    background-size: cover;
+    background-position: center;
+    min-height: 440px;
+
+    display: flex;
+    align-items: center;
+
+    color: white;
+}
+
+.banner-content {
+    max-width: 650px;
+    padding: 70px 0;
+}
+
+.small-heading,
+.section-label {
+    color: #bd922c;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+.about-banner h1 {
+    font-size: clamp(34px, 5vw, 52px);
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.banner-description {
+    max-width: 560px;
+    font-size: 17px;
+    color: #eeeeee;
+}
+
+.explore-button {
+    background-color: var(--ncu-gold);
+    color: var(--ncu-blue);
+    padding: 12px 22px;
+    font-weight: bold;
+    border: none;
+}
+
+.explore-button:hover {
+    background-color: #ffffff;
+    color: var(--ncu-blue);
+}
+
+
+/* Department introduction */
+
+.department-intro {
+    padding: 85px 0;
+}
+
+.department-intro h2,
+.section-title h2,
+.faq-section h2 {
+    color: var(--ncu-blue);
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.department-intro p {
+    color: #555555;
+}
+
+.intro-photo {
+    position: relative;
+}
+
+.intro-photo img {
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.photo-caption {
+    background-color: var(--ncu-blue);
+    color: white;
+    padding: 13px 18px;
+    position: absolute;
+    bottom: 15px;
+    left: -20px;
+    border-left: 4px solid var(--ncu-gold);
+}
+
+
+/* Mission and vision */
+
+.purpose-section {
+    background-color: var(--light-grey);
+    padding: 80px 0;
+}
+
+.section-title {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.section-title > p:last-child {
+    color: #666666;
+}
+
+.purpose-box {
+    background-color: #ffffff;
+    padding: 35px;
+    height: 100%;
+    border-radius: 5px;
+    border-bottom: 4px solid var(--ncu-gold);
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+
+.purpose-box:hover {
+    transform: translateY(-5px);
+}
+
+.purpose-box h3 {
+    color: var(--ncu-blue);
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.purpose-box p {
+    color: #626262;
+    margin-bottom: 0;
+}
+
+.purpose-icon {
+    font-size: 34px;
+    color: #c49a32;
+    margin-bottom: 15px;
+}
+
+
+/* Areas of study */
+
+.study-section {
+    padding: 85px 0;
+}
+
+.study-card {
+    background-color: white;
+    height: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.study-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.study-image {
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.study-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s;
+}
+
+.study-card:hover .study-image img {
+    transform: scale(1.04);
+}
+
+.study-number {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: var(--ncu-gold);
+    color: var(--ncu-blue);
+    padding: 7px 13px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.study-content {
+    padding: 27px;
+}
+
+.study-content h3 {
+    color: var(--ncu-blue);
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.study-content p {
+    color: #666666;
+    font-size: 15px;
+}
+
+.study-link {
+    display: inline-block;
+    color: #9a721d;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.study-link:hover {
+    color: var(--ncu-blue);
+}
+
+
+/* Frequently asked questions */
+
+.faq-section {
+    background-color: var(--light-grey);
+    padding: 85px 0;
+}
+
+.faq-section h2 {
+    margin-bottom: 18px;
+}
+
+.faq-section > .container > .row > .col-lg-4 > p:not(.section-label) {
+    color: #666666;
+}
+
+.contact-button {
+    background-color: var(--ncu-blue);
+    color: white;
+    padding: 10px 22px;
+    margin-top: 12px;
+}
+
+.contact-button:hover {
+    background-color: #244c76;
+    color: white;
+}
+
+.accordion-item {
+    border: none;
+    border-bottom: 1px solid #dddddd;
+    margin-bottom: 10px;
+    border-radius: 4px !important;
+    overflow: hidden;
+}
+
+.accordion-button {
+    color: var(--ncu-blue);
+    font-weight: bold;
+    padding: 20px;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--ncu-blue);
+    color: white;
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: transparent;
+}
+
+.accordion-body {
+    color: #555555;
+    background-color: white;
+}
+
+
+/* Footer */
+
+.department-footer {
+    background-color: var(--ncu-blue);
+    color: white;
+    padding: 55px 0 15px;
+}
+
+.department-footer h4 {
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.department-footer h5 {
+    color: var(--ncu-gold);
+    font-size: 17px;
+    margin-bottom: 18px;
+}
+
+.department-footer p {
+    color: #d7dce3;
+    font-size: 14px;
+}
+
+.footer-note {
+    color: var(--ncu-gold) !important;
+    font-style: italic;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: #d7dce3;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: var(--ncu-gold);
+}
+
+.university-link {
+    color: var(--ncu-gold);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.university-link:hover {
+    color: white;
+}
+
+.department-footer hr {
+    border-color: #8290a0;
+    margin-top: 30px;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.copyright p {
+    font-size: 13px;
+}
+
+
+/* Tablet and smaller screens */
+
+@media (max-width: 991px) {
+
+    .navbar-nav .nav-link {
+        margin-left: 0;
+        padding: 9px 0;
+    }
+
+    .search-box {
+        max-width: 220px;
+    }
+
+    .intro-photo img {
+        height: 340px;
+    }
+
+    .photo-caption {
+        left: 10px;
+    }
+
+}
+
+
+/* Mobile screens */
+
+@media (max-width: 576px) {
+
+    .brand-name {
+        font-size: 12px;
+    }
+
+    .about-banner {
+        min-height: 390px;
+        background-position: center;
+    }
+
+    .banner-content {
+        padding: 55px 0;
+    }
+
+    .about-banner h1 {
+        font-size: 34px;
+    }
+
+    .banner-description {
+        font-size: 15px;
+    }
+
+    .department-intro,
+    .purpose-section,
+    .study-section,
+    .faq-section {
+        padding: 55px 0;
+    }
+
+    .department-intro h2,
+    .section-title h2,
+    .faq-section h2 {
+        font-size: 27px;
+    }
+
+    .intro-photo img {
+        height: 260px;
+    }
+
+    .photo-caption {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        margin-top: 10px;
+    }
+
+    .purpose-box {
+        padding: 25px;
+    }
+
+    .study-image {
+        height: 210px;
+    }
+
+}
+
+
